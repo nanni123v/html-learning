@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 4px solid black;
+            margin:2px;
+            padding:2px;
+            display:flex;
+            flex-direction:row;
+            /* flex-wrap:wrap; */
+            height:500px;
+            /* justify-content:center ; */
+            align-items: center;
+        }
+        .box{
+            border:2px solid brown;
+            margin:2px;
+            padding:2px;
+            height:200px;
+            width:200px;
+        }
+        #box1{
+            background-color: aquamarine;
+            order:500;
+            flex-shrink:4;
+            flex-grow:1;
+        }
+        #box2{
+            background-color: blue;
+            flex-grow:1;
+        }
+        #box3{
+            background-color: blueviolet;
+            flex-grow:1;
+        }
+        #box4{
+            background-color: brown;
+            order:1;
+            flex-grow:1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">BOX1</div>
+        <div class="box" id="box2">BOX2</div>
+        <div class="box" id="box3">BOX3</div>
+        <div class="box" id="box4">BOX4</div>
+
+    </div>
+</body>
+</html>
